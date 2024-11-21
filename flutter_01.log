@@ -1,0 +1,63 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+NoSuchMethodError: NoSuchMethodError: The getter 'assetPathsToEvict' was called on null.
+Receiver: null
+Tried calling: assetPathsToEvict
+
+```
+#0      Object.noSuchMethod (dart:core-patch/object_patch.dart:54:5)
+#1      HotRunner._resetDirtyAssets (package:flutter_tools/src/run_hot.dart:427:20)
+#2      HotRunner._restartFromSources (package:flutter_tools/src/run_hot.dart:490:5)
+<asynchronous suspension>
+#3      HotRunner._fullRestartHelper (package:flutter_tools/src/run_hot.dart:681:16)
+<asynchronous suspension>
+#4      HotRunner.restart (package:flutter_tools/src/run_hot.dart:628:38)
+<asynchronous suspension>
+#5      TerminalHandler._commonTerminalInputHandler (package:flutter_tools/src/resident_runner.dart:1647:40)
+<asynchronous suspension>
+#6      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1689:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.0.4, on Microsoft Windows [Version 10.0.19045.2728], locale en-US)
+    • Flutter version 2.0.4 at C:\Users\hp\fvm\versions\2.0.4
+    • Framework revision b1395592de (2 years ago), 2021-04-01 14:25:01 -0700
+    • Engine revision 2dce47073a
+    • Dart version 2.12.2
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 33.0.1)
+    • Android SDK at C:\Users\hp\AppData\Local\Android\sdk
+    • Platform android-33, build-tools 33.0.1
+    • Java binary at: C:\Program Files\Common Files\Oracle\Java\javapath\java.exe
+    • Java version Java(TM) SE Runtime Environment 18.9 (build 11.0.12+8-LTS-237)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/windows#android-setup for detailed instructions).
+
+[✓] VS Code (version 1.76.2)
+    • VS Code at C:\Users\hp\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.61.20230301
+
+[✓] Connected device (3 available)
+    • Infinix X650B (mobile) • 172.20.10.2:5555 • android-arm    • Android 9 (API 28)
+    • Chrome (web)           • chrome           • web-javascript • Google Chrome 111.0.5563.111
+    • Edge (web)             • edge             • web-javascript • Microsoft Edge 111.0.1661.44
+    ! Device 172.20.10.2:5555 is offline.
+
+! Doctor found issues in 1 category.
+```

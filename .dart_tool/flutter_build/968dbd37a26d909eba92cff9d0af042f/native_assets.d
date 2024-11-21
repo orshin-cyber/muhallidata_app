@@ -1,0 +1,1 @@
+ /Users/macbook/Desktop/Mobile_App/standaloneapp/muhallidata_app/.dart_tool/flutter_build/968dbd37a26d909eba92cff9d0af042f/native_assets.yaml: 
